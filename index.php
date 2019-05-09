@@ -1,10 +1,27 @@
 <?php
-    $Wallet = 1000;
-    $Ps4Price = 2000;
+    $Cube = 2;
 
-    if($wallet >= $Ps4Price){
-        echo "You bought the PS4";
-    } else
-        echo "Insufficient amount";
+    switch ($Cube){
+        case 1:
+            echo "This is 1";
+            break;
+        case 2:
+            echo "This is 2";
+            break;
+        case 3:
+            echo "This is 3";
+            break;
+        case 4:
+            echo "This is 4";
+            break;
+        case 5:
+            echo "This is 5";
+            break;
+        case 6:
+            echo "This is 6";
+            break;
+        default:
+            echo "Magic cube";
 
-?>
+
+    }
