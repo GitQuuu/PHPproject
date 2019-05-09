@@ -1,14 +1,10 @@
 <?php
-    $var1 = 2;
-    $var2 = 3;
+    $Wallet = 1000;
+    $Ps4Price = 2000;
 
-    $result = $var1 + $var2;
-
-    $var3 = 15;
-    $var4 = 5.5;
-
-    $result2 = $var3 / $var4;
-
-    echo $result2;
+    if($wallet >= $Ps4Price){
+        echo "You bought the PS4";
+    } else
+        echo "Insufficient amount";
 
 ?>
