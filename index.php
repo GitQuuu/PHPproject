@@ -20,7 +20,7 @@ echo "<br>";
         --$decrement;
     }
 
-
+echo"<br>";
 
 /* Vi ønsker at købe en robot. Lav et program med 3 variabler (money, paycheck og robotCost). Sæt de 3 værdier til
    henholdsvist 0 (vores nuværdene konto saldo), 5 (vores løn) og 100 (prisen på den seje robot). Forøg money med
