@@ -1,17 +1,22 @@
 <?php
-// udskriv 10-tabellen med en while loop
-
+//Lav et vilkårligt while loop, og konverter den derefter til et for-loop.
 $Titabellen = 1;
 while($Titabellen <=10){
     echo 10*$Titabellen."";
     echo "<br>";
     $Titabellen++;
 }
-
+//Udskriv 10-tabellen med et for loop.
+echo"<br>";
+for ($tal = 1; $tal <=10; $tal++){
+    echo" ";
+    echo $tal*10;
+}
+echo"<br>";
+//Udskriv alle lige tal, fra 1-1000 (brug en if-sætning og %).
 
 echo "<br>";
-
-// udskriv tallen 0 til -100 med en while loop
+//udskriv tallen 0 til -100 med en while loop
     $decrement = 0;
     while ($decrement >= -100){
         echo $decrement;
@@ -19,7 +24,6 @@ echo "<br>";
 
         --$decrement;
     }
-
 echo"<br>";
 
 /* Vi ønsker at købe en robot. Lav et program med 3 variabler (money, paycheck og robotCost). Sæt de 3 værdier til
