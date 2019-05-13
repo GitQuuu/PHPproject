@@ -1,51 +1,54 @@
 <?php
-//Lav en funktion der tager 2 parametrer. Den skal udskrive den største værdi. Test funktionen ved at kalde den.
-function printHighestValueOutOfTwoParameter($value1,$value2){
-        if($value2 > $value1){
-            echo "$value2 is the highest value<br>";
-        }
-        else {
-         echo "$value1 is the highest value<br>";
-        }
+//Lav et numerisk array, der indeholder 6 valgfrie tal elementer. Udprint dit array.
+$numbers[] =9;
+$numbers[] =18;
+$numbers[] =27;
+$numbers[] =36;
+$numbers[] =45;
+
+//print out whole array
+print_r($numbers);
+echo "<br>";
+//print a specific index
+echo "$numbers[0]<br>";
+//print 2 array index thats been +
+$result = $numbers[0]+$numbers[0];
+echo "$result<br>";
+
+
+
+//Lav et numerisk array, der indeholder 5 STRING elementer (fungerer på samme måde som med tal, bare indsæt string istedet). Udprint array.
+$stringArray[] ="Navn";
+$stringArray[] ="Mellemnavn";
+$stringArray[] ="Efternavn";
+$stringArray[] ="Bopæs kommune";
+$stringArray[] ="Forhold";
+
+print_r($stringArray);
+//Konstruér en sætning, ved at tage strings fra dit array i øvelse 2. For eksempel kan du lave en variabel, og sætte
+// den lig med et par elementer der sættes sammen med operatoren fra dit array. Udskriv så sætningen.
+
+echo"<br>Testing both arrays we start with a number: $numbers[0] and then a whats inside our string array on index 0 : $stringArray[0]<br>";
+
+//Lav et associativt array, der holder styr på varerne i dit køleskab. Key er varen, og value er antallet du har.
+// For eksempel $fridge['milk'] = 2; udfyld en 3-4 stykker. Udprint herefter hele dette array.
+
+$fridge['milk'] = 2;
+$fridge['beer'] = 6;
+$fridge['butter'] = 1;
+
+print_r($fridge);
+
+
+// Bonus: udprint det du har MEST af, i øvelse 4. Har du for eksempel mest mælk i dit køleskab, skal du udprinte
+// "Jeg har mest mælk: 14", hvis du f.eks. havde 14 mælk i køleskabet. Kan løses med if-else sætninger, og ved manuelt
+// at kigge i hver enkelt key-value pair i dit associative array.
+function fridgeContents(){
+    $fridge['milk'] = 2;
+    $fridge['beer'] = 6;
+    $fridge['butter'] = 1;
+
+    if 
 }
-printHighestValueOutOfTwoParameter(10,100);
 
-
-
-//Lav en funktion der tager 3 parametrer, og returnerer den mindste værdi. Udskriv herefter denne. Test funktionen ved at kalde den.
-function printLowestValueOutOfThreeParameter($value1, $value2, $value3){
-    $lowestValue ="";
-if($value1<$value2 && $value1<$value3){
-    $lowestValue = $value1;
-}else if($value2<$value1 && $value2<$value3){
-    $lowestValue = $value2;
-}else if ($value3<$value2 && $value3<$value1){
-    $lowestValue ="$value3";
-}
-
-return $lowestValue."<br>";
-}
-echo "This is the lowest value ";
-echo printLowestValueOutOfThreeParameter(100,200,300);
-
-
-
-
-
-//Lav en funktion der ingen parametrer tager, og som udskriver en valgfri tekst. Kald funktion 2 gange.
-function printAFunctionWithoutParameter(){
-    echo "Optional text<br>";
-}
-
-printAFunctionWithoutParameter();
-printAFunctionWithoutParameter();
-
-
-//Lav en funktion, der tager 5 parametrer, og udskriver en sætning med alle 5. Du bestemmer selv hvad sætningen er.
-//Prøv at kald den flere gange. Ændre i dine parametre, og se hvordan sætningen ændrer sig med det.
-function printAFunctionWith5Parameter($name,$age,$heigth,$weight,$nationality){
-    echo "Hi my name is $name I am $age old I am $heigth cm in height, and weight is $weight kg. I am of $nationality origin";
-}
-
-printAFunctionWith5Parameter("Qu",31,175,85,"Vietnamese")
 ?>
