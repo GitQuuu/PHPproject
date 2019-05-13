@@ -13,8 +13,22 @@ for ($tal = 1; $tal <=10; $tal++){
     echo $tal*10;
 }
 echo"<br>";
-//Udskriv alle lige tal, fra 1-1000 (brug en if-sætning og %).
-
+echo"<br>";
+//Udskriv alle lige tal, fra 1-1000 (brug en if-sætning og %)
+//Method 1 loop starts from number 2 and after every count its value increment by 2 for print even numbers.
+for ($method1 = 2; $method1 <=1000; $method1+=2) {
+    echo " ";
+    echo $method1;
+}
+echo"<br>";
+echo"<br>";
+//method 2 loop starts from number 1 and after every count its value increment by 1, when ‘if’ condition will be true, it print even numbers.
+for($method2= 1; @$method2 <=1000; @$method2++){
+    if($method2%2==0){
+        echo $method2." ";
+    }
+}
+echo"<br>";
 echo "<br>";
 //udskriv tallen 0 til -100 med en while loop
     $decrement = 0;
