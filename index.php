@@ -8,21 +8,27 @@ function printHighestValueOutOfTwoParameter($value1,$value2){
          echo "$value1 is the highest value<br>";
         }
 }
-
 printHighestValueOutOfTwoParameter(10,100);
+
+
 
 //Lav en funktion der tager 3 parametrer, og returnerer den mindste værdi. Udskriv herefter denne. Test funktionen ved at kalde den.
 function printLowestValueOutOfThreeParameter($value1, $value2, $value3){
+    $lowestValue ="";
 if($value1<$value2 && $value1<$value3){
-    return $value1;
-} else if($value2<$value1 && $value2<$value3){
-    return $value2;
+    $lowestValue = $value1;
+}else if($value2<$value1 && $value2<$value3){
+    $lowestValue = $value2;
 }else if ($value3<$value2 && $value3<$value1){
-    return $value3;
+    $lowestValue ="$value3";
 }
+
+return $lowestValue."<br>";
 }
-$result = printLowestValueOutOfThreeParameter(100,200,30);
-echo "$result is the lowest value<br>";
+echo "This is the lowest value ";
+echo printLowestValueOutOfThreeParameter(100,200,300);
+
+
 
 
 
