@@ -7,18 +7,28 @@
 <body>
 <!--Efterlign formularen og scriptet der laves i videoen. Prøv evt. selv at tilføje flere input områder, som du så
 fanger og anvender i modtager.php filen.-->
-<form method="post" action="modtager.php">
-    <label for="to">til:</label>
-    <input type="text" name="to">
-    <br>
-    <label for="subject">Emne:</label>
-    <input type="text" name="subject">
-    <br>
-    <label for="message">Besked:</label>
-    <textarea rows="10" cols="30" name="message"></textarea>
-    <br>
-    <input type="submit" value="Send besked">
-</form>
+<div>
+    <form  method="post" action="modtager.php">
+        <label for="to">From:</label>
+        <input type="text" name="to">
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="Name">
+        <br>
+        <label for="Phone" >Phone:</label>
+        <input type="text" name="Phone">
+        <br>
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject">
+        <br>
+        <label for="message">Message:</label>
+        <textarea rows="10" cols="30" name="message"></textarea>
+        <br>
+        <input type="submit" value="Send besked">
+    </form>
+</div>
+
+<hr>
 <!--Lav en formular med 4 input områder til tal. Kald dem henholdsvis A, B, C og D. Opret en ny fil kaldet
 regnemaskine.php. Når data (i dette tilfælde tal) sendes til regnemaskine.php skal A og B lægges sammen, mens C og D
 skal trækkes fra hinanden. Begge resultater skal printes ud på regnemaskine.php siden. Læg mærke til, at du her har
