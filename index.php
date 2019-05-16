@@ -1,17 +1,10 @@
 <?php
-//Udprint datoen i dag (uden klokkeslæt).
-echo date("d/m/Y");
-echo"<br>";
-//Udprint klokkeslæt i dag (uden dato).
-echo date("H:i:s");
-echo"<br>";
-//Udprint datoen, på formen (hvis det er søndag d. 20 juli): Sun, 20 juli
-echo date("D N M");
-echo "<br>";
-//Udprint datoen (på valgfri form) 2 uger i fremtiden.
-echo date("d/m/Y - H:i:s",(time()+(14*24*60*60)));
-echo "<br>";
-//Udprint datoen (på valgfri form) 1 dag tilbage i tiden, altså i går.
-echo date("d/m/Y - H:i:s",(time()-(1*24*60*60)));
-//*hint: Brug php.net under date funktionen for vejledning.
+//Efterlign formularen og scriptet der laves i videoen. Prøv evt. selv at tilføje flere input områder, som du så fanger
+// og anvender i modtager.php filen.
+
+//Lav en formular med 4 input områder til tal. Kald dem henholdsvis A, B, C og D. Opret en ny fil kaldet
+// regnemaskine.php. Når data (i dette tilfælde tal) sendes til regnemaskine.php skal A og B lægges sammen, mens C og D
+// skal trækkes fra hinanden. Begge resultater skal printes ud på regnemaskine.php siden. Læg mærke til, at du her har
+// lavet en mini lommeregner, hvor du ved at indtaste i formularen kan få lagt A og B sammen og/eller trukket C og D fra
+// hinanden.
 ?>
